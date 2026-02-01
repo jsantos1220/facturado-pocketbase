@@ -1,0 +1,18 @@
+{
+	"files.exclude": {
+		"node_modules": true
+	},
+	"github.copilot.chat.commitMessageGeneration.instructions": [
+		{
+			"text": "Sea extremadamente detallado con los cambios en los archivos y el motivo del cambio. Use muchos emojis y escribe en español"
+		}
+	],
+	"github.copilot.chat.reviewSelection.instructions": [
+		{
+			"text": "All classes should have comments, Functions should have comments. Variables SHOULD NOT have comments"
+		}
+	],
+	"workbench.sideBar.location": "left",
+	"workbench.secondarySideBar.showLabels": true,
+	"workbench.secondarySideBar.defaultVisibility": "hidden"
+}
