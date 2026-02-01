@@ -16,17 +16,18 @@
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
 		"types": ["vite/client"],
-		"baseUrl": ".",
+
 		"paths": {
-			"@api/*": ["src/api/*"],
-			"@images/*": ["src/images/*"],
-			"@assets/*": ["src/assets/*"],
-			"@components/*": ["src/components/*"],
-			"@context/*": ["src/context/*"],
-			"@lib/*": ["src/lib/*"],
-			"@pages/*": ["src/pages/*"],
-			"@styles/*": ["src/styles/*"],
-			"@utils/*": ["src/utils/*"]
+			"@api/*": ["./src/api/*"],
+			"@images/*": ["./src/images/*"],
+			"@assets/*": ["./src/assets/*"],
+			"@components/*": ["./src/components/*"],
+			"@context/*": ["./src/context/*"],
+			"@lib/*": ["./src/lib/*"],
+			"@pages/*": ["./src/pages/*"],
+			"@styles/*": ["./src/styles/*"],
+			"@utils/*": ["./src/utils/*"],
+			"@/*": ["./*"]
 		}
 	},
 	"include": ["src/**/*", "vite-env.d.ts"]

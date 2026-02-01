@@ -22,11 +22,11 @@ export default function UpdatePassword() {
 		},
 	})
 
-	const onSubmit: SubmitHandler<FormData> = async data => {
-		const { error } = await supabase.auth.updateUser({ password: data.password })
+	//const onSubmit: SubmitHandler<FormData> = async data => {
+	//	const { error } = await supabase.auth.updateUser({ password: data.password })
 
-		if (!error) navigate('dashboard')
-	}
+	//	if (!error) navigate('dashboard')
+	//}
 
 	const password = watch('password')
 

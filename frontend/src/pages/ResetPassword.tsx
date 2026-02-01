@@ -20,24 +20,24 @@ export default function ResetPassword() {
 		},
 	})
 
-	const onSubmit: SubmitHandler<FormData> = async data => {
-		const { error } = await supabase.auth.resetPasswordForEmail(data.email, {
-			redirectTo: `${import.meta.env.VITE_FRONTEND_URL}/update-password`,
-		})
+	//const onSubmit: SubmitHandler<FormData> = async data => {
+	//	const { error } = await supabase.auth.resetPasswordForEmail(data.email, {
+	//		redirectTo: `${import.meta.env.VITE_FRONTEND_URL}/update-password`,
+	//	})
 
-		if (!error) {
-			Swal.fire({
-				title: 'Email enviado',
-				icon: 'success',
-				draggable: true,
-				showConfirmButton: false,
-				timer: 1500,
-				timerProgressBar: true,
-			}).then(() => {
-				navigate('/')
-			})
-		}
-	}
+	//	if (!error) {
+	//		Swal.fire({
+	//			title: 'Email enviado',
+	//			icon: 'success',
+	//			draggable: true,
+	//			showConfirmButton: false,
+	//			timer: 1500,
+	//			timerProgressBar: true,
+	//		}).then(() => {
+	//			navigate('/')
+	//		})
+	//	}
+	//}
 
 	return (
 		<Container>

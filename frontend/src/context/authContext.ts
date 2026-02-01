@@ -1,36 +1,3 @@
-//import { create } from 'zustand'
-//import supabase from '@lib/supabase'
-
-//import type { User, Session } from '@supabase/supabase-js'
-
-//type AuthStore = {
-//	session: Session | null
-//	user: User | null
-//	loading: boolean
-//	error: string | null
-//}
-
-//const useAuthStore = create<AuthStore>(set => {
-//	// Escucha cambios de sesión
-//	supabase.auth.onAuthStateChange((_event, session) => {
-//		set({
-//			session,
-//			user: session?.user ?? null,
-//			loading: false,
-//			error: null,
-//		})
-//	})
-
-//	return {
-//		session: null,
-//		user: null,
-//		loading: true,
-//		error: null,
-//	}
-//})
-
-//export default useAuthStore
-
 // stores/auth.store.ts
 import { create } from 'zustand'
 import pb from '@lib/pocketbase'

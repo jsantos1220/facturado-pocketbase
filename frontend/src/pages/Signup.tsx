@@ -35,14 +35,14 @@ export default function Signup() {
 		},
 	})
 
-	const onSubmit: SubmitHandler<FormData> = async datos => {
-		const { email, password } = datos
-		const { error } = await supabase.auth.signInWithPassword({ email, password })
+	//const onSubmit: SubmitHandler<FormData> = async datos => {
+	//	const { email, password } = datos
+	//	const { error } = await supabase.auth.signInWithPassword({ email, password })
 
-		if (error) {
-			setError('root', { message: 'Password o contraseña equivocados' })
-		}
-	}
+	//	if (error) {
+	//		setError('root', { message: 'Password o contraseña equivocados' })
+	//	}
+	//}
 
 	return (
 		<Container>
